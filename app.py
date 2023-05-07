@@ -12,6 +12,7 @@ def result():
     height_feet = float(request.form['height_feet'])
     height_inches = float(request.form['height_inches'])
     height = (height_feet * 12 + height_inches) * 0.0254
+    weight = weight * 0.453592  # convert pounds to kg
     bmi = weight / (height ** 2)
     return render_template('result.html', bmi=bmi)
 
