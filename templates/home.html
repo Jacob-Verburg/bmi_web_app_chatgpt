@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-5">BMI Calculator</h1>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-center">Calculate your BMI</h2>
+            </div>
+            <div class="card-body">
+              <form method="POST" action="/result">
+                <div class="mb-3">
+                  <label for="weight" class="form-label">Weight (lbs)</label>
+                  <input type="number" class="form-control" id="weight" name="weight" required>
+                </div>
+                <div class="mb-3">
+                  <label for="height_feet" class="form-label">Height (feet)</label>
+                  <input type="number" class="form-control" id="height_feet" name="height_feet" required>
+                </div>
+                <div class="mb-3">
+                  <label for="height_inches" class="form-label">Height (inches)</label>
+                  <input type="number" class="form-control" id="height_inches" name="height_inches" required>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Calculate</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
